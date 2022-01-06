@@ -25,8 +25,8 @@ public class Main {
             System.out.println("установите версию приложения для Android по ссылке");
         }
 
-        int year = 2654;
-        if (year % 4 == 0 || year % 400 == 0) {
+        int year = 2365;
+        if (year % 100 != 0 && year % 4 == 0 || year % 400 == 0) {
             System.out.println("год является високосным");
         } else {
             System.out.println("год не является високосным");
@@ -34,17 +34,17 @@ public class Main {
 
         int deliveryDistance = 95;
         int deliveryDay = 1;
-        if (deliveryDistance <= 20) {
-            System.out.println("потербуется дней - " + deliveryDay);
-        }
+        int countDay = 0;
         if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println("потребуется дней - " + ++deliveryDay);
+            countDay = 1;
         }
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println("потребуется дней - " + (++deliveryDay + 1));
+            countDay = 2;
         }
+        System.out.println("потребуется дней - " + (deliveryDay + countDay));
 
-        int monthNumber = 12;
+
+            int monthNumber = 12;
         switch (monthNumber) {
             case 12:
             case 1:
