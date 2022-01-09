@@ -34,14 +34,14 @@ public class Main {
 
         int deliveryDistance = 95;
         int deliveryDay = 1;
-        int countDay = 0;
+        int countDay = 1;
         if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            countDay = 1;
+           deliveryDay = deliveryDay + countDay;
         }
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            countDay = 2;
+            deliveryDay = deliveryDay + ++countDay;
         }
-        System.out.println("потребуется дней - " + (deliveryDay + countDay));
+        System.out.println("потребуется дней - " + deliveryDay);
 
 
             int monthNumber = 12;
