@@ -36,10 +36,10 @@ public class Main {
         int deliveryDay = 1;
         int countDay = 1;
         if (deliveryDistance > 20 && deliveryDistance <= 60) {
-           deliveryDay = deliveryDay + countDay;
+            deliveryDay = deliveryDay + 1;
         }
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            deliveryDay = deliveryDay + ++countDay;
+            deliveryDay = deliveryDay + 2;
         }
         System.out.println("потребуется дней - " + deliveryDay);
 
