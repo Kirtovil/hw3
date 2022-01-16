@@ -34,11 +34,11 @@ public class Main {
 
         int deliveryDistance = 95;
         int deliveryDay = 1;
-        if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            deliveryDay = deliveryDay + 1;
+        if (deliveryDistance > 20) {
+            deliveryDay++;
         }
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            deliveryDay = deliveryDay + 1 + 1;
+            deliveryDay++;
         }
         System.out.println("потребуется дней - " + deliveryDay);
 
